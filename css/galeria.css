@@ -1,0 +1,54 @@
+.gallery__img{
+    object-fit: cover;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .5s;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.30);
+}
+.gallery__img:hover{
+    transform: scale(1.03);
+}
+.gallery__img--big{
+    height: 400px;
+}
+.gallery__img--small{
+    height: 200px;
+}
+.modal{
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0,0,0,.8);
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 300;
+}
+.modal__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.modal__img{
+    width: 50%;
+}
+.modal__boton{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #DE423A;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: monospace;
+}
+.modal--open{
+    display: block;
+}
